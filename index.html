@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Alejandro</title>
+  
+  <!-- Estilos personalizados -->
+  <style>
+    /* Estilos para párrafos */
+    p {
+      color: #333;
+      font-size: 16px;
+    }
+
+    /* Estilos para vínculos */
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    /* Estilos para listas */
+    ul {
+      list-style-type: none;
+    }
+
+    /* Estilos para tablas */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    /* Estilos para formularios */
+    form {
+      margin-bottom: 20px;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+
+  <!-- Integración de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <!-- Integración de Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+</head>
+<body>
+  <!-- Tabla -->
+  <table>
+    <thead>
+      <tr>
+        <th>Juegos</th>
+        <th>Canción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sunautica</td>
+        <td>Halo</td>
+      </tr>
+      <tr>
+        <td>Homage</td>
+        <td><a href="https://youtu.be/dQJnDFNZLWk?si=QNs4J5tWigj3ke6k" target="_blank">Enamorado tuyo</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Objeto incrustado -->
+  <br>
+  <h2>Nota TXT</h2>
+  <object data="texto.txt" type="application/pdf" width="100%" height="600px">
+    <p>No es posible mostrar el PDF.</p>
+  </object>
+
+  <!-- Formulario -->
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+    <input type="submit" value="Enviar">
+  </form>
+
+  <!-- Integración de Bootstrap -->
+  <div class="container">
+    <button class="btn btn-primary">Botón de Bootstrap</button>
+  </div>
+
+  <!-- Integración de Bulma -->
+  <div class="container">
+    <button class="button is-success">Botón de Bulma</button>
+  </div>
+
+</body>
+</html>
